@@ -21,7 +21,7 @@ body {
   position: relative;
   width: 100%;
   height: 60vh;
-  background: url("hero-new-bg.png") center 20% / cover no-repeat;
+  background: url("hero-new-bg.png") center 15% / cover no-repeat;
 }
 
 .hero-overlay {
