@@ -48,7 +48,7 @@ body {
 /* Functional buttons only */
 .menu {
   position: absolute;
-  left: 70px;
+  left: 45px;
   bottom: 40px;
   display: flex;
   flex-wrap: wrap;
