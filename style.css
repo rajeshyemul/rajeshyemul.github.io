@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #0f0f12;
+  color: #eaeaf0;
+}
+
+.container {
+  max-width: 700px;
+  padding: 80px 24px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 8px;
+}
+
+.tagline {
+  color: #9aa0ff;
+  margin-bottom: 48px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
