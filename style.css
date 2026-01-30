@@ -106,8 +106,8 @@ section ul,
 .project,
 article {
   max-width: 720px;
-  padding: 20px 24px;
-  margin-bottom: 20px;
+  padding: 10px 24px;
+  margin-bottom: 10px;
   border: 1px solid #e5e7eb;
   border-radius: 12px;
   background: #ffffff;
