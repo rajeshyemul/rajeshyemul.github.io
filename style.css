@@ -1,3 +1,7 @@
+/* ======================================================
+   Executive Minimal Theme – Rajesh Yemul
+   ====================================================== */
+
 * {
   box-sizing: border-box;
 }
@@ -6,24 +10,24 @@ html {
   scroll-behavior: smooth;
 }
 
-/* ---------- BASE ---------- */
-
 body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Helvetica, Arial, sans-serif;
-  color: #111827;
-  line-height: 1.65;
+  color: #0f172a;
+  line-height: 1.7;
   background: #ffffff;
 }
 
-/* ---------- HERO ---------- */
+/* ======================================================
+   HERO
+   ====================================================== */
 
 .hero {
   position: relative;
   width: 100%;
   height: 60vh;
-  background: url("hero-new-bg.png") center 15% / cover no-repeat;
+  background: url("hero-new-bg.png") center 20% / cover no-repeat;
 }
 
 .hero-overlay,
@@ -35,14 +39,16 @@ body {
   margin: 0 auto;
 }
 
-/* Hide duplicated visuals */
+/* Hide duplicate hero text if image contains typography */
 .avatar,
 .hero-text h1,
 .subheading {
   display: none;
 }
 
-/* ---------- HERO MENU ---------- */
+/* ======================================================
+   HERO MENU
+   ====================================================== */
 
 .menu {
   position: absolute;
@@ -50,26 +56,26 @@ body {
   bottom: 40px;
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 14px;
 }
 
 .menu a {
   text-decoration: none;
   color: #ffffff;
-  font-size: 13px;
-  letter-spacing: 0.05em;
+  font-size: 12px;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  padding: 10px 16px;
+  padding: 9px 18px;
   border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.35);
   background: rgba(0, 0, 0, 0.35);
   backdrop-filter: blur(6px);
   transition: all 0.2s ease;
 }
 
 .menu a:hover {
-  background: rgba(255, 255, 255, 0.25);
-  color: #000;
+  background: rgba(255, 255, 255, 0.9);
+  color: #111827;
 }
 
 @media (max-width: 720px) {
@@ -81,117 +87,141 @@ body {
   }
 }
 
-/* ---------- SECTIONS ---------- */
+/* ======================================================
+   SECTION LAYOUT
+   ====================================================== */
 
 section {
-  max-width: 900px;
+  max-width: 880px;
   margin: 0 auto;
-  padding: 28px 24px;
+  padding: 72px 24px;
 }
 
-section > :last-child {
-  margin-bottom: 0;
+section + section {
+  border-top: 1px solid #f1f5f9;
 }
+
+/* ======================================================
+   SECTION HEADINGS
+   ====================================================== */
 
 section h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
-/* Card containers */
-section p,
-section ul,
-.project,
-article {
-  max-width: 720px;
-  padding: 20px 24px;
-  margin-bottom: 20px;
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  background: #ffffff;
-}
-
-/* ---------- SKILLS ---------- */
-
-.skill-group {
-  margin-bottom: 32px;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 36px;
+  color: #0f172a;
 }
 
 .skill-group h3 {
   font-size: 18px;
-  margin-bottom: 12px;
-}
-
-/* Skill bars */
-
-.skill-bars {
-  display: grid;
-  gap: 14px;
-}
-
-.skill-bar span {
-  font-size: 14px;
-  font-weight: 500;
-  display: block;
-  margin-bottom: 4px;
-}
-
-.bar {
-  height: 8px;
-  background: #e5e7eb;
-  border-radius: 999px;
-  overflow: hidden;
-}
-
-.bar div {
-  height: 100%;
-  background: linear-gradient(90deg, #2563eb, #22c55e);
-  border-radius: 999px;
-}
-
-/* Skill tags (buttons) */
-
-.skill-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.skill-tags span {
-  padding: 8px 14px;
-  border-radius: 999px;
-  font-size: 13px;
-  background: #f8fafc;
-  border: 1px solid #e5e7eb;
+  font-weight: 600;
+  margin-bottom: 16px;
   color: #111827;
-  white-space: nowrap;
 }
 
-/* ---------- LISTS ---------- */
+/* ======================================================
+   TEXT BLOCKS
+   ====================================================== */
+
+section p {
+  max-width: 720px;
+  margin-bottom: 22px;
+  font-size: 16px;
+  color: #334155;
+}
+
+/* Remove heavy card styling */
+section ul,
+.project,
+article {
+  max-width: 720px;
+  margin-bottom: 28px;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+/* ======================================================
+   LISTS
+   ====================================================== */
 
 section ul {
-  padding-left: 44px;
+  padding-left: 22px;
 }
 
 section li {
-  margin-bottom: 6px;
+  margin-bottom: 10px;
+  color: #334155;
 }
 
-/* ---------- HEADINGS ---------- */
+/* ======================================================
+   PROJECT / INITIATIVE BLOCKS
+   ====================================================== */
 
-h4 {
-  font-size: 17px;
-  margin-bottom: 6px;
+.project h3,
+article h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #0f172a;
 }
 
-/* ---------- LINKS ---------- */
+.project p,
+article p {
+  margin-bottom: 14px;
+  color: #334155;
+}
+
+/* Subtle separation between initiatives */
+.project + .project,
+article + article {
+  padding-top: 28px;
+  border-top: 1px solid #f1f5f9;
+}
+
+/* ======================================================
+   EXPERIENCE
+   ====================================================== */
+
+article ul {
+  padding-left: 22px;
+}
+
+article li {
+  margin-bottom: 8px;
+}
+
+/* ======================================================
+   CONTACT
+   ====================================================== */
 
 #contact a {
   color: #2563eb;
   text-decoration: none;
-  border-bottom: 1px solid rgba(37, 99, 235, 0.4);
+  border-bottom: 1px solid rgba(37, 99, 235, 0.3);
+  transition: all 0.2s ease;
 }
 
 #contact a:hover {
   border-color: #2563eb;
+}
+
+/* ======================================================
+   RESPONSIVE
+   ====================================================== */
+
+@media (max-width: 720px) {
+  section {
+    padding: 60px 20px;
+  }
+
+  section h2 {
+    font-size: 26px;
+  }
+
+  .project h3,
+  article h4 {
+    font-size: 18px;
+  }
 }
