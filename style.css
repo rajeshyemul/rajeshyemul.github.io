@@ -24,17 +24,102 @@ body {
   line-height: 1.75;
 }
 
-/* HERO */
+/* ======================================================
+   EXECUTIVE HERO
+   ====================================================== */
 
 .hero {
-  height: 65vh;
-  background: url("hero-new-bg.png") center center / cover no-repeat;
-  position: relative;
+  background: #ffffff;
+  padding: 100px 28px 80px 28px;
+  border-bottom: 1px solid #e2e8f0;
 }
 
-.hero-overlay {
-  height: 100%;
-  backdrop-filter: brightness(0.9);
+.hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.hero-left {
+  flex: 0 0 220px;
+}
+
+.hero-avatar {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #f1f5f9;
+}
+
+.hero-right {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-right h1 {
+  font-size: 42px;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+  letter-spacing: -0.02em;
+}
+
+.hero-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #334155;
+}
+
+.hero-subtitle {
+  font-size: 16px;
+  margin-bottom: 28px;
+  color: #64748b;
+}
+
+/* Navigation inside hero */
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding-bottom: 4px;
+  color: #0f172a;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.menu a:hover {
+  border-color: #0f172a;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .hero-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .hero-avatar {
+    width: 180px;
+    height: 180px;
+  }
+
+  .hero-right h1 {
+    font-size: 32px;
+  }
 }
 
 .menu {
