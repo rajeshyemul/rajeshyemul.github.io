@@ -1,250 +1,198 @@
-:root {
-  --bg-main: #f8fafc;
-  --bg-section: #ffffff;
-  --border-soft: #e2e8f0;
-  --text-primary: #0f172a;
-  --text-secondary: #475569;
-  --accent: #111827;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rajesh Yemul — Director, Quality Engineering | Enterprise Automation Strategy</title>
+  <link rel="stylesheet" href="style.css?v=5">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
 
-* {
-  box-sizing: border-box;
-}
+<!-- Hero -->
+<header class="hero">
+  <div class="hero-inner">
 
-html {
-  scroll-behavior: smooth;
-}
+    <div class="hero-left">
+      <img src="rajesh.photo.png" alt="Rajesh Yemul" class="hero-avatar">
+    </div>
 
-body {
-  margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Helvetica, Arial, sans-serif;
-  background: var(--bg-main);
-  color: var(--text-primary);
-  line-height: 1.75;
-}
+    <div class="hero-right">
+      <h1>Rajesh Yemul</h1>
+      <p class="hero-title">
+        Director – Quality Engineering
+      </p>
+      <p class="hero-subtitle">
+        Enterprise Automation Strategy · AI-Enabled QE Modernization
+      </p>
 
-/* ======================================================
-   EXECUTIVE HERO
-   ====================================================== */
+      <nav class="menu">
+        <a href="#about">Vision</a>
+        <a href="#ai">AI Strategy</a>
+        <a href="#skills">Capabilities</a>
+        <a href="#projects">Initiatives</a>
+        <a href="#experience">Leadership</a>
+        <a href="#contact">Contact</a>
+        <a href="https://medium.com/@rajesh.yemul_42550" target="_blank" rel="noopener">Publications</a>
+      </nav>
+    </div>
 
-.hero {
-  background: #ffffff;
-  padding: 100px 28px 80px 28px;
-  border-bottom: 1px solid #e2e8f0;
-}
+  </div>
+</header>
 
-.hero-inner {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  gap: 60px;
-  flex-wrap: wrap;
-}
+  <!-- Strategic One-Liner -->
+  <section class="mission">
+    <p>
+      Helping global engineering teams modernize Quality Engineering at scale — 
+      through architecture discipline, automation governance, and AI-enabled optimization.
+    </p>
+  </section>
 
-.hero-left {
-  flex: 0 0 220px;
-}
+  <!-- About -->
+  <section id="about">
+    <h2>Vision</h2>
+    <p>
+      I lead enterprise Quality Engineering modernization initiatives that transform automation 
+      from a support function into a scalable delivery enabler. With 20+ years in technology 
+      and 15+ years focused on automation strategy, I design systems that improve release velocity, 
+      reduce operational cost, and increase engineering confidence at scale.
+    </p>
+    <p>
+      My work spans multi-program portfolios, cross-team framework standardization, CI/CD-aligned 
+      automation ecosystems, and governance models that embed quality directly into delivery workflows.
+    </p>
+    <p>
+      Sustainable quality comes from system design, architectural clarity, and strategic alignment — not heroics.
+    </p>
+  </section>
 
-.hero-avatar {
-  width: 220px;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid #f1f5f9;
-}
+  <!-- AI -->
+  <section id="ai">
+    <h2>AI Strategy in Quality Engineering</h2>
+    <ul>
+      <li>AI-assisted test case generation aligned to business workflows</li>
+      <li>Impact-based test prioritization and intelligent optimization</li>
+      <li>Selector validation and automation stability engineering</li>
+      <li>Agent-based QA workflows for exploratory validation</li>
+      <li>Framework-level AI integration for diagnostics and observability</li>
+    </ul>
+    <p>
+      AI is integrated as an optimization layer within structured automation ecosystems —
+      amplifying discipline rather than replacing architecture.
+    </p>
+  </section>
 
-.hero-right {
-  flex: 1;
-  min-width: 280px;
-}
+  <!-- Strategic Capabilities -->
+  <section id="skills">
+    <h2>Strategic Capabilities</h2>
 
-.hero-right h1 {
-  font-size: 42px;
-  font-weight: 600;
-  margin: 0 0 12px 0;
-  letter-spacing: -0.02em;
-}
+    <div class="skill-group">
+      <h3>Enterprise QE Strategy</h3>
+      <ul>
+        <li>Automation Modernization Roadmaps</li>
+        <li>Enterprise Test Governance</li>
+        <li>In-Sprint Automation Enablement</li>
+        <li>Release Predictability & Risk Alignment</li>
+      </ul>
+    </div>
 
-.hero-title {
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 8px;
-  color: #334155;
-}
+    <div class="skill-group">
+      <h3>Automation Architecture & Scale</h3>
+      <ul>
+        <li>Modular Playwright + TypeScript Framework Design</li>
+        <li>Parallel Execution & CI/CD Integration</li>
+        <li>Reusable Automation Ecosystems</li>
+        <li>Typed API Contracts & Data-Driven Models</li>
+      </ul>
+    </div>
 
-.hero-subtitle {
-  font-size: 16px;
-  margin-bottom: 28px;
-  color: #64748b;
-}
+    <div class="skill-group">
+      <h3>AI-Enabled QE Systems</h3>
+      <ul>
+        <li>AI-Assisted Test Case Generation</li>
+        <li>Intelligent Test Optimization</li>
+        <li>Automation Stability Engineering</li>
+        <li>Agent-Based QA Validation Models</li>
+      </ul>
+    </div>
+  </section>
 
-/* Navigation inside hero */
+  <!-- Initiatives -->
+  <section id="projects">
+    <h2>Transformation Initiatives</h2>
 
-.menu {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-}
+    <div class="project">
+      <h3>Enterprise Automation Framework Standardization</h3>
+      <p>
+        Designed and published a modular Playwright + TypeScript framework as a reusable internal package, 
+        enabling cross-team adoption of standardized architecture, CI/CD templates, and governance guardrails.
+      </p>
+    </div>
 
-.menu a {
-  text-decoration: none;
-  font-size: 13px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  padding-bottom: 4px;
-  color: #0f172a;
-  border-bottom: 1px solid transparent;
-  transition: all 0.2s ease;
-}
+    <div class="project">
+      <h3>AI-Integrated Automation Ecosystem</h3>
+      <p>
+        Embedded AI capabilities directly into automation frameworks to enhance scenario generation, 
+        impact analysis, selector resilience, and diagnostic observability.
+      </p>
+    </div>
 
-.menu a:hover {
-  border-color: #0f172a;
-}
+    <div class="project">
+      <h3>Scalable CI & Distributed Test Execution</h3>
+      <p>
+        Designed reusable CI workflows to shard and distribute large test suites, 
+        improving regression efficiency and execution predictability.
+      </p>
+    </div>
 
-/* Responsive */
+  </section>
 
-@media (max-width: 768px) {
-  .hero-inner {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 40px;
-  }
+  <!-- Experience -->
+  <section id="experience">
+    <h2>Leadership Experience</h2>
 
-  .hero-avatar {
-    width: 180px;
-    height: 180px;
-  }
+    <article>
+      <h4>Technical Director – Quality Engineering</h4>
+      <ul>
+        <li>Led enterprise-scale automation modernization across multi-program portfolios</li>
+        <li>Defined architecture blueprints for cross-team framework adoption</li>
+        <li>Aligned QE capability with delivery velocity and executive objectives</li>
+        <li>Integrated AI optimization within structured automation systems</li>
+      </ul>
+    </article>
 
-  .hero-right h1 {
-    font-size: 32px;
-  }
-}
+    <article>
+      <h4>Technical Manager / Test Architect</h4>
+      <ul>
+        <li>Governed automation architecture across enterprise programs</li>
+        <li>Standardized CI/CD-integrated automation ecosystems</li>
+        <li>Mentored engineers toward architectural and strategic thinking</li>
+      </ul>
+    </article>
 
-.menu {
-  position: absolute;
-  left: 60px;
-  bottom: 40px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-}
+  </section>
 
-.menu a {
-  text-decoration: none;
-  font-size: 12px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  padding: 8px 18px;
-  border-radius: 999px;
-  border: 1px solid rgba(255,255,255,0.4);
-  color: #fff;
-  background: rgba(0,0,0,0.35);
-  transition: all 0.2s ease;
-}
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li>ME Computer Networks — Pune</li>
+      <li>BE Computer Technology — Baramati</li>
+      <li>Diploma in Computer Technology — Pune</li>
+      <li>Certified Scrum Master</li>
+    </ul>
+  </section>
 
-.menu a:hover {
-  background: rgba(255,255,255,0.9);
-  color: #000;
-}
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:rajesh.yemul@gmail.com">rajesh.yemul@gmail.com</a></p>
+    <p>
+      LinkedIn:
+      <a href="https://www.linkedin.com/in/rajesh-yemul-050381/" target="_blank" rel="noopener">
+        linkedin.com/in/rajesh-yemul
+      </a>
+    </p>
+  </section>
 
-/* Mission */
-
-.mission {
-  background: #ffffff;
-  padding: 60px 28px;
-  text-align: center;
-  border-bottom: 1px solid var(--border-soft);
-}
-
-.mission p {
-  max-width: 820px;
-  margin: 0 auto;
-  font-size: 20px;
-  font-weight: 500;
-  color: var(--accent);
-  line-height: 1.6;
-}
-
-/* Sections */
-
-section {
-  max-width: 880px;
-  margin: 0 auto;
-  padding: 80px 28px;
-}
-
-section + section {
-  border-top: 1px solid var(--border-soft);
-}
-
-section:nth-of-type(even) {
-  background: #f9fafb;
-}
-
-section h2 {
-  font-size: 32px;
-  font-weight: 600;
-  margin-bottom: 40px;
-}
-
-section p {
-  max-width: 720px;
-  font-size: 16px;
-  color: var(--text-secondary);
-  margin-bottom: 24px;
-}
-
-.skill-group h3 {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 14px;
-}
-
-ul {
-  padding-left: 22px;
-}
-
-li {
-  margin-bottom: 10px;
-  color: var(--text-secondary);
-}
-
-.project + .project,
-article + article {
-  margin-top: 32px;
-  padding-top: 32px;
-  border-top: 1px solid var(--border-soft);
-}
-
-.project h3,
-article h4 {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 12px;
-}
-
-#contact a {
-  color: var(--accent);
-  text-decoration: none;
-  border-bottom: 1px solid rgba(15,23,42,0.25);
-}
-
-#contact a:hover {
-  border-color: var(--accent);
-}
-
-@media (max-width: 720px) {
-  section {
-    padding: 60px 20px;
-  }
-
-  section h2 {
-    font-size: 26px;
-  }
-
-  .mission p {
-    font-size: 18px;
-  }
-}
+</body>
+</html>
