@@ -85,7 +85,7 @@ nav .inner {
 
 nav .brand {
   font-family: var(--serif);
-  font-size: 1.05rem;
+  font-size: 1.10rem;
   color: var(--ink);
   font-style: italic;
   letter-spacing: 0.01em;
@@ -133,8 +133,8 @@ header {
 
 .hero-photo {
   flex-shrink: 0;
-  width: 110px;
-  height: 110px;
+  width: clamp(150px, 22vw, 220px);
+  height: clamp(150px, 22vw, 220px);
   border-radius: 50%;
   overflow: hidden;
   border: 3px solid var(--rule);
@@ -635,8 +635,8 @@ footer p {
 /* ── Responsive ───────────────────────────────────────────────────────────── */
 @media (max-width: 500px) {
   .hero-photo {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
   }
 
   nav .links {
